@@ -1,0 +1,30 @@
+$cx-include-global-rules: true;
+
+$cx-default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+@import "~cx-theme-aquamarine/src/variables";
+
+$link-color: darken($cx-theme-primary-color-dark, 10);
+
+$cx-element-style-map: cx-deep-map-merge($cx-element-style-map, (
+  body: (
+    background: #eeeeee
+  ),
+  strong: (
+    font-weight: 500
+  ),
+  a: (
+    color: $link-color
+  )
+));
+@import "~cx-theme-aquamarine/src/index";
+
+@import "components/index";
+@import "layout/index";
+@import "routes/index";
+@import "widgets/index";
+
+//body {
+//  background-image: url('http://wallpapercave.com/wp/WY4oW5x.jpg');
+//  background-position: center center;
+//}

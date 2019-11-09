@@ -1,0 +1,101 @@
+.kpi {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.kpi-header {
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: gray;
+  //text-transform: uppercase;
+}
+
+.kpi-footer {
+  margin-top: 0.5em;
+  text-align: center;
+  //text-transform: uppercase;
+  color: rgba(black, 0.6);
+
+  a {
+    color: inherit;
+  }
+}
+
+.kpi-main {
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.kpi-value {
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: 200;
+}
+
+.kpi-value-text {
+  font-size: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.donut-text {
+  font-size: 20px;
+}
+
+.line-marker circle {
+  stroke: white;
+  stroke-width: 4px;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.line-marker circle:hover {
+  stroke: #99e4ee;
+}
+
+.cxe-numericaxis-label {
+  font-size: 10px;
+}
+
+.cxe-categoryaxis-label {
+  font-size: 10px;
+}
+
+.cxb-dragclone .kpi {
+  font-size: 10px;
+}
+
+.widget-cell {
+  background: rgba(white, 0.9);
+  box-shadow: 0 0 2px rgba(black, 0.1);
+  margin: 1px;
+  cursor: move;
+  animation: appear 0.15s;
+  touch-action: none;
+  position: relative;
+
+  &:hover .widget-toolbar {
+    opacity: 0.8;
+  }
+}
+
+.widget-toolbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  padding: 3px;
+  //padding: 3px 10px;
+  //background: rgba(gray, 0.3);
+  //color: white;
+  //transition: opacity 0.5s;
+}
+
+@import "./text/index";
