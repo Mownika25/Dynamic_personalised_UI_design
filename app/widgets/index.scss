@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   padding: 0.5em;
+
 }
 
 .kpi-header {
   margin-bottom: 0.5em;
   text-align: center;
-  color: gray;
+  color: black;
   //text-transform: uppercase;
 }
 
@@ -15,10 +16,10 @@
   margin-top: 0.5em;
   text-align: center;
   //text-transform: uppercase;
-  color: rgba(black, 0.6);
+  color: rgba(white, 0.9);
 
   a {
-    color: inherit;
+    color: red;
   }
 }
 
@@ -33,21 +34,23 @@
 }
 
 .kpi-value {
-  font-size: 3.5em;
+  font-size: 3.7em;
   text-align: center;
   font-weight: 200;
 }
 
 .kpi-value-text {
-  font-size: 15px;
+  font-size: 19px;
   text-align: right;
   text-transform: uppercase;
   font-weight: bold;
   margin-top: -10px;
+  
 }
 
 .donut-text {
   font-size: 20px;
+
 }
 
 .line-marker circle {
@@ -73,8 +76,8 @@
 }
 
 .widget-cell {
-  background: rgba(white, 0.9);
-  box-shadow: 0 0 2px rgba(black, 0.1);
+  background: linear-gradient(to left, #79cdff, #9de4f1);
+  box-shadow: 0 0 2px rgba(white, 0.6);
   margin: 1px;
   cursor: move;
   animation: appear 0.15s;

@@ -15,6 +15,7 @@ Icon.register('dashboard', (props) =>
     </svg>
 );
 
+
 export default (
     <cx>
         <LinkButton href="~/new" mod="primary" putInto="tools">
@@ -40,6 +41,7 @@ export default (
                             href:tpl="~/{$record.id}"
                             text:tpl="{$record.title}"
                             style="min-width: 200px"
+                            
                         />
                     </Repeater>
                     <div visible:expr="!{dashboards.length}">
@@ -53,17 +55,7 @@ export default (
                 </FlexRow>
                 <br/>
 
-                <h3>Samples</h3>
-
-                <FlexRow controller={Controller} spacing wrap>
-                    <LinkButton
-                        mod="hollow"
-                        icon="dashboard"
-                        href="~/lao6cfj"
-                        text="Crypto"
-                        style="min-width: 200px"
-                    />
-                </FlexRow>
+                
             </Section>
         </FlexRow>
     </cx>

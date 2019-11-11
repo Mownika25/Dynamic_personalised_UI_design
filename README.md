@@ -1,13 +1,3 @@
-## how to reproduce
-
-sudo apt install npm (npm if not installed)
-
-npm i 
-
-npm install babel-preset-env --save-dev
-
-npm start 
-
 # Dashboards
 
 This application allows you to build personalized dashboards using drag &amp; drop. Dashboards consists out of widgets

@@ -15,7 +15,7 @@ $header-height: 64px;
 .header {
    padding: 0 1.5em;
    height: $header-height;
-   background: white;
+    background: rgba(green, 0.6);
    position: fixed;
    transition: all 0.2s linear;
    left: 0;
@@ -33,7 +33,7 @@ $header-height: 64px;
       white-space: nowrap;
       text-overflow: ellipsis;
       //color: white;
-   }
+   }background: linear-gradient(to left, #F78888, #FFCCBC);
 
    .layout.nav & {
       transform: translateX($aside-width);
@@ -50,7 +50,8 @@ $header-height: 64px;
    top: 0;
    bottom: 0;
    width: $aside-width;
-   background: white;
+   background: linear-gradient(to left, #16FFBD, #FFCCBC);
+   
    box-shadow: 0 0 1px rgba(0,0,0,.26);
    font-size: 13px;
    display: flex;
@@ -130,7 +131,7 @@ p {
 }
 
 .cxb-section.cxm-card {
-   background: white;
+   background: linear-gradient(to left, #D6CE15, #ECECEC);
    box-shadow: 0 0 5px rgba(0,0,0,.26);
    border-radius: 1px;
 }

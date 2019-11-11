@@ -24,7 +24,7 @@ export default (props = defaultProps) => (
 				</LoadingOverlay>
 			</div>
 			<div class="kpi-footer">
-				<a href="https://blockchain.info/" target="_blank" rel="noopener">
+				<a href="https://www.humanapi.co/" target="_blank" rel="noopener">
 					blockchain.info
 				</a>
 			</div>
