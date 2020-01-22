@@ -8,13 +8,13 @@ $link-color: darken($cx-theme-primary-color-dark, 10);
 
 $cx-element-style-map: cx-deep-map-merge($cx-element-style-map, (
   body: (
-    background: #6200EE
+    background: linear-gradient(to left, #000000,#404040)
   ),
   strong: (
     font-weight: 500
   ),
   a: (
-    color: #442C2E
+    color: $link-color
   )
 ));
 @import "~cx-theme-aquamarine/src/index";

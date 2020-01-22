@@ -12,7 +12,7 @@ export default (props = defaultProps) => (
 	<cx>
 		<Rescope bind="$data">
 			<div class="kpi-header" controller={Controller}>
-				BTC Price
+				Number of articles about Rape 
 			</div>
 			<div class="kpi-main">
 				<LoadingOverlay
@@ -24,8 +24,8 @@ export default (props = defaultProps) => (
 				</LoadingOverlay>
 			</div>
 			<div class="kpi-footer">
-				<a href="https://www.humanapi.co/" target="_blank" rel="noopener">
-					blockchain.info
+				<a href="https://www.news18.com/newstopics/rape.html" target="_blank" rel="noopener">
+					Sources
 				</a>
 			</div>
 		</Rescope>

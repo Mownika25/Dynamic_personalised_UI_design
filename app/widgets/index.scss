@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 0.5em;
-
 }
 
 .kpi-header {
@@ -16,10 +15,10 @@
   margin-top: 0.5em;
   text-align: center;
   //text-transform: uppercase;
-  color: rgba(white, 0.9);
+  color: rgba(black, 0.6);
 
   a {
-    color: red;
+    color: inherit;
   }
 }
 
@@ -30,27 +29,25 @@
   align-items: center;
   justify-content: center;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .kpi-value {
-  font-size: 3.7em;
+  font-size: 3.5em;
   text-align: center;
   font-weight: 200;
 }
 
 .kpi-value-text {
-  font-size: 19px;
+  font-size: 15px;
   text-align: right;
   text-transform: uppercase;
   font-weight: bold;
   margin-top: -10px;
-  
 }
 
 .donut-text {
   font-size: 20px;
-
 }
 
 .line-marker circle {
@@ -76,8 +73,8 @@
 }
 
 .widget-cell {
-  background: linear-gradient(to left, #79cdff, #9de4f1);
-  box-shadow: 0 0 2px rgba(white, 0.6);
+  background: linear-gradient(to left ,#79cdff,#9de4f1);
+  box-shadow: 0 0 2px rgba(black, 0.1);
   margin: 1px;
   cursor: move;
   animation: appear 0.15s;
@@ -93,6 +90,9 @@
   position: absolute;
   right: 0;
   top: 0;
+
+   resize: both;
+  overflow: auto;
   opacity: 0;
   padding: 3px;
   //padding: 3px 10px;

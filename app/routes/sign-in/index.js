@@ -12,8 +12,8 @@ export default () => (
 			style="height: 100%"
 		>
 			<Section mod="card" visible={expr("!{user.id}")}>
-				<div>
-					<h2 putInto="header">Sign In</h2>
+				<div style="background-color: black">
+					<h2 putInto="header" ><b>Sign In</b></h2>
 				</div>
 				<p>
 					Please sign in using one of the available authentication providers.

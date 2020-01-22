@@ -42,11 +42,11 @@ export default (
 				<ContentPlaceholder name="tools" />
 			</header>
 			<aside class="aside">
-				<h1><Link href="~/">Dashboards</Link></h1>
+				<h1><Link href="~/">News-boards</Link></h1>
 				<dl style="flex: 1 1 0%; overflow: auto">
 					<dt>
 						<Link href="~/new" url:bind="url">
-							Create New Dashboard
+							Create a News-board
 						</Link>
 					</dt>
 					<dt>

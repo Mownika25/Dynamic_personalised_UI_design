@@ -6,7 +6,7 @@ const defaultProps = {};
 export default ({} = defaultProps) => (
 	<cx>
 		<div class="kpi-header" controller={Controller}>
-			News
+			Technology News
 		</div>
 		<div class="kpi-main" style="justify-content: start">
 			<ul>
@@ -23,8 +23,8 @@ export default ({} = defaultProps) => (
 			</ul>
 		</div>
 		<div class="kpi-footer">
-			<a href:tpl="https://newsapi.org" target="_blank" rel="noopener">
-				newsapi.org
+			<a href:tpl="https://www.indiatoday.in/technology/news" target="_blank" rel="noopener">
+				More
 			</a>
 		</div>
 	</cx>

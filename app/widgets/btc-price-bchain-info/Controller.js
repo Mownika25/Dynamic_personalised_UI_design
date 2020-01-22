@@ -1,15 +1,16 @@
 import { Controller } from "cx/ui";
 
 const getBtcPrice = () =>
-	fetch("https://blockchain.info/ticker")
+	fetch("https://newsapi.org/v2/top-headlines?q=climate&apiKey=c03cf67d0e414ff3a578badda1b368cf"
+		)
 		.then(x => {
 			if (!x.ok)
-				throw new Error("Failed to fetch BTC price from blockchain.info");
+				throw new Error("Failed to fetch no.of articles");
 			return x;
 		})
 		.then(x => x.json())
 		.then(x => {
-			return x["USD"]["15m"];
+			return x["totalResults"];
 		});
 
 export default class extends Controller {

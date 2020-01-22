@@ -45,8 +45,9 @@ export default (
 				url={bind("url")}
 				mod="top"
 				visible={expr("!{user.id} && !{user.loading}")}
+
 			>
-				Sign In
+				<h2><b>Sign In</b></h2>
 			</Link>
 		</div>
 	</cx>

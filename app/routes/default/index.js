@@ -41,7 +41,7 @@ class PageControlller extends Controller {
             if (error) {
                 Toast.create({
                     children:
-                    "Error occurred while loading dashboard: " + error.toString(),
+                    "Error occurred while loading board: " + error.toString(),
                     timeout: 10000,
                     mod: "error"
                 }).open();
@@ -57,7 +57,7 @@ class PageControlller extends Controller {
                     if (this.store.set('$page.add', true)) {
                         Toast.create({
                             children: 'Drag & drop widgets from the right sidebar on the board.',
-                            timeout: 5000,
+                            timeout: 4000,
                             mod: "primary"
                         }).open();
                     }
@@ -118,7 +118,7 @@ export default (
                     value:bind="$page.search"
                     style="margin: 15px 10px; width: auto"
                     inputStyle="border-color: transparent"
-                    placeholder="Search..."
+                    placeholder="Search a widget..."
                 />
                 <div style="overflow-x: hidden; overflow-y: auto; padding: 10px">
                     <FlexRow spacing="large" wrap>
@@ -186,7 +186,7 @@ export default (
 
             <Window
                 visible:bind="$page.edit"
-                title="Dashboard Properties"
+                title="Board Properties"
                 bodyStyle="padding: 0 20px 20px"
                 backdrop
             >
